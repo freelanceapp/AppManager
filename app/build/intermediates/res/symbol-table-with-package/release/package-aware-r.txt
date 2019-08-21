@@ -1098,6 +1098,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id disableHome
+id display_mode
 id edit_query
 id end
 id end_padder
@@ -1323,6 +1324,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fab_toast_layout
+layout item_grid
 layout item_row
 layout menu
 layout mtrl_layout_snackbar

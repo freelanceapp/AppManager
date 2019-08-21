@@ -87,14 +87,25 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     Dialog mDialog1;
     SwipeRefreshLayout mSwipeRL;
     ItemAdapter itemAdapter;
-    private int STORAGE_PERMISSION_CODE = 1;
     Bundle bundle;
     String appname, packagename, filePath = null, newFilePath = null;
-    private AdView mAdView;
     Toolbar toolbar;
     int counter;
-    ArrayAdapter<String>listAdapter;
+    ArrayAdapter<String> listAdapter;
     BottomSheetDialog bottomSheetDialog;
+    boolean display_mode;
+    private int STORAGE_PERMISSION_CODE = 1;
+    private AdView mAdView;
+
+    public static long GetApkSize(String apkPath) {
+        File apk = new File(apkPath);
+        return apk.length();
+    }
+
+    public static String bytesToMb(long bytes) {
+        return String.format(Locale.getDefault(), "%.2f MB", ((double) bytes / 1048576));
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             }
         });
 
-        MobileAds.initialize(this, "****************************");
+        MobileAds.initialize(this, "*************************");
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -161,32 +172,49 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         //method to get Apps List
         getApps();
 
-        itemAdapter = new ItemAdapter(app);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        DividerItemDecoration itemDecorator = new DividerItemDecoration(MainActivity.this, DividerItemDecoration.VERTICAL);
-        itemDecorator.setDrawable(ContextCompat.getDrawable(MainActivity.this, R.drawable.divider));
-        recyclerView.addItemDecoration(itemDecorator);
-        // Method  to Sort List Alphabethacally
-        //update List
-        recyclerView.setAdapter(itemAdapter);
-
+        setDisplayMode();
         int count = recyclerView.getAdapter().getItemCount();
-
         tv_subtitle.setText("Total Apps :  " + count);
         PrepareOnCLick();
         Sorts();
 
     }
 
+    public void setDisplayMode() {
+        display_mode = JetDB.getBoolean(MainActivity.this, "display_mode", false);
+        itemAdapter = new ItemAdapter(app, display_mode);
+//        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        if (!display_mode) {
+            RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+            recyclerView.setLayoutManager(mLayoutManager);
+            recyclerView.setItemAnimator(new DefaultItemAnimator());
+            DividerItemDecoration itemDecorator = new DividerItemDecoration(MainActivity.this, DividerItemDecoration.VERTICAL);
+            itemDecorator.setDrawable(ContextCompat.getDrawable(MainActivity.this, R.drawable.divider));
+            recyclerView.addItemDecoration(itemDecorator);
+            recyclerView.setAdapter(itemAdapter);
+            PrepareOnCLick();
+        } else {
+            GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
+            gridLayoutManager.setOrientation(LinearLayoutManager.VERTICAL); // set Horizontal Orientation
+            recyclerView.setLayoutManager(gridLayoutManager);
+            recyclerView.setItemAnimator(new DefaultItemAnimator());
+            DividerItemDecoration itemDecorator = new DividerItemDecoration(MainActivity.this, DividerItemDecoration.VERTICAL);
+            itemDecorator.setDrawable(ContextCompat.getDrawable(MainActivity.this, R.drawable.divider));
+            recyclerView.addItemDecoration(itemDecorator);
+            recyclerView.setAdapter(itemAdapter);
+            PrepareOnCLick();
+
+        }
+        Log.i("ISGRID", String.valueOf(display_mode));
+    }
 
     public void PrepareOnCLick() {
 
         itemAdapter.setOnItemClickListener(new ItemAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                if (!is_in_Action) {
+                Log.d("Click","Click");
+//                if (!is_in_Action) {
                     DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
                     long ftt = app.get(position).getFirstInstallTime();
                     long ltt = app.get(position).getLastUpdateTime();
@@ -233,6 +261,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
                     list.add("App Info");
                     list.add("Extract/Backup Apk");
                     list.add("Open in Play Store");
+                    list.add("Uninstall");
                     list.add("Share App(Only Link)");
                     list.add("");
                     listView.setAdapter(listAdapter);
@@ -267,18 +296,25 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
                             }
                             if (position == 3) {
                                 openGP(packagename);
+                                dialog.dismiss();
 
                             }
                             if (position == 4) {
+                                delete(packagename);
+                                dialog.dismiss();
+
+                            }
+                            if (position == 5) {
                                 share(packagename, appname);
+                                dialog.dismiss();
                             }
                         }
                     });
                     dialog.show();
 
-                } else {
-
-                }
+////                } else {
+//
+//                }
             }
 
             @Override
@@ -360,16 +396,6 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         i.addCategory(Intent.CATEGORY_DEFAULT);
         i.setData(Uri.parse("package:" + packagename));
         startActivity(i);
-    }
-
-    public static long GetApkSize(String apkPath) {
-        File apk = new File(apkPath);
-        return apk.length();
-    }
-
-    public static String bytesToMb(long bytes) {
-        return String.format(Locale.getDefault(), "%.2f MB", ((double) bytes / 1048576));
-
     }
 
     //get All Installed Apps
@@ -600,6 +626,13 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             MenuInflater inflater = getMenuInflater();
             inflater.inflate(R.menu.main, menu);
 
+            display_mode = JetDB.getBoolean(MainActivity.this,"display_mode",false);
+            if (display_mode){
+                menu.findItem(R.id.display_mode).setTitle("ListView");
+            }else{
+                menu.findItem(R.id.display_mode).setTitle("GridView");
+            }
+
             MenuItem searchItem = menu.findItem(R.id.action_search);
             SearchView searchView = (SearchView) searchItem.getActionView();
             searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -624,10 +657,20 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
 
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.display_mode:
+                if (display_mode) {
+                    JetDB.putBoolean(MainActivity.this, false, "display_mode");
+                    item.setTitle("GridView");
+                    setDisplayMode();
+                } else {
+                    JetDB.putBoolean(MainActivity.this, true, "display_mode");
+                    item.setTitle("ListView");
+                    setDisplayMode();
+                }
+                break;
             case R.id.about:
                 Intent intent = new Intent(MainActivity.this, AboutActivity.class);
                 startActivity(intent);
-
                 break;
             case R.id.sort:
                 Sort();

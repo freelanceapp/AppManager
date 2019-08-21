@@ -1098,6 +1098,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id disableHome
+id display_mode
 id edit_query
 id end
 id end_padder
@@ -1113,11 +1114,6 @@ id filled
 id fixed
 id forever
 id ghost_view
-id grid_checkbox
-id grid_imageview
-id grid_tv_date
-id grid_tv_name
-id grid_tv_size
 id group_divider
 id home
 id homeAsUp

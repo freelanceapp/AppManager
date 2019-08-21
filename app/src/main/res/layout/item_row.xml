@@ -92,7 +92,6 @@
                 android:gravity="center_vertical"
                 android:onClick="appinfo" />
 
-
             <Button
                 android:id="@+id/btnd"
                 android:layout_width="35dp"
