@@ -4,13 +4,15 @@
 
 
     <item
+        android:title="Select All"
         android:id="@+id/allselect"
         android:icon="@drawable/ic_selectall"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
 
     <item
+        android:title="Uninstall"
         android:id="@+id/delete"
         android:icon="@drawable/ic_delete"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
 
 </menu>

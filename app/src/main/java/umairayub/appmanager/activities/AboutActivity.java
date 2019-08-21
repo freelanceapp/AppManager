@@ -2,14 +2,11 @@ package umairayub.appmanager.activities;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import com.gainwise.exceptionbuddy.ExceptionBuddy;
-
 import spencerstudios.com.bungeelib.Bungee;
-
 import umairayub.appmanager.R;
 
 public class AboutActivity extends AppCompatActivity {

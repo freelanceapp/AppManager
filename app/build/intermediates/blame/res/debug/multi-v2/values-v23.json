@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Umair Ayub\\Downloads\\AppManager\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "/home/umair/Desktop/AppManager/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Umair Ayub\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\5684e78ac842bb53b91ec44397b3bbe5\\res\\values-v23\\values-v23.xml",
+                    "source": "/home/umair/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/7dda6f4b6ec18eb526c6edc4cc77eb55/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Umair Ayub\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-28.0.0.aar\\bd3922a29fa7d1a696a9b0de04200a5e\\res\\values-v23\\values-v23.xml",
+                    "source": "/home/umair/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/6ccffd344dddba5bd3806bd89fac58d1/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

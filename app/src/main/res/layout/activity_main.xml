@@ -22,7 +22,7 @@
             android:layout_alignParentBottom="true"
             android:visibility="gone"
             ads:adSize="SMART_BANNER"
-            ads:adUnitId="*********************************"/>
+            ads:adUnitId="*******************************"/>
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:layout_width="match_parent"

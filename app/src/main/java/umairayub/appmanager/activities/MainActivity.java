@@ -5,7 +5,6 @@ import android.app.Dialog;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
@@ -15,6 +14,7 @@ import android.net.Uri;
 import android.os.Environment;
 import android.os.Handler;
 import android.support.annotation.NonNull;
+import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -22,6 +22,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
@@ -68,10 +69,8 @@ import spencerstudios.com.bungeelib.Bungee;
 import spencerstudios.com.fab_toast.FabToast;
 import spencerstudios.com.jetdblib.JetDB;
 import umairayub.appmanager.Item;
-import umairayub.appmanager.ItemAdapter;
 import umairayub.appmanager.R;
-
-import static android.Manifest.permission_group.STORAGE;
+import umairayub.appmanager.adapters.ItemAdapter;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnLongClickListener {
@@ -91,10 +90,11 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     private int STORAGE_PERMISSION_CODE = 1;
     Bundle bundle;
     String appname, packagename, filePath = null, newFilePath = null;
-    ArrayAdapter<String> listAdapter;
     private AdView mAdView;
     Toolbar toolbar;
     int counter;
+    ArrayAdapter<String>listAdapter;
+    BottomSheetDialog bottomSheetDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             }
         });
 
-        MobileAds.initialize(this, "*************************");
+        MobileAds.initialize(this, "****************************");
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         clearActionMode();
         //method to get Apps List
         getApps();
-        //setting Adapter to recyclerView
+
         itemAdapter = new ItemAdapter(app);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
@@ -171,6 +171,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         // Method  to Sort List Alphabethacally
         //update List
         recyclerView.setAdapter(itemAdapter);
+
         int count = recyclerView.getAdapter().getItemCount();
 
         tv_subtitle.setText("Total Apps :  " + count);
@@ -300,9 +301,9 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         startActivity(launchIntent);
     }
 
-    public void Sorts(){
-        String sort = JetDB.getString(MainActivity.this, "sort", "sort by name");
-        if(sort.equals("sort by name")){
+    public void Sorts() {
+        String sort = JetDB.getString(MainActivity.this, "sort", "sort by name ascending");
+        if (sort.equals("sort by name ascending")) {
             Collections.sort(app, new Comparator<Item>() {
                 @Override
                 public int compare(Item item, Item t1) {
@@ -310,7 +311,15 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
                 }
             });
         }
-        if(sort.equals("sort by date")){
+        if (sort.equals("sort by name descending")) {
+            Collections.sort(app, new Comparator<Item>() {
+                @Override
+                public int compare(Item item, Item t1) {
+                    return t1.getName().compareTo(item.getName());
+                }
+            });
+        }
+        if (sort.equals("sort by date ascending")) {
             Collections.sort(app, new Comparator<Item>() {
                 @Override
                 public int compare(Item item, Item t1) {
@@ -318,7 +327,15 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
                 }
             });
         }
-        if(sort.equals("sort by size")){
+        if (sort.equals("sort by date descending")) {
+            Collections.sort(app, new Comparator<Item>() {
+                @Override
+                public int compare(Item item, Item t1) {
+                    return Long.valueOf(t1.getFirstInstallTime()).compareTo(item.getFirstInstallTime());
+                }
+            });
+        }
+        if (sort.equals("sort by size ascending")) {
             Collections.sort(app, new Comparator<Item>() {
                 @Override
                 public int compare(Item item, Item t1) {
@@ -326,7 +343,16 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
                 }
             });
         }
+        if (sort.equals("sort by size descending")) {
+            Collections.sort(app, new Comparator<Item>() {
+                @Override
+                public int compare(Item item, Item t1) {
+                    return Long.valueOf(t1.getAppsize()).compareTo(Long.valueOf(item.getAppsize()));
+                }
+            });
+        }
     }
+
     //launch info Activity of a given Package
     public void appinfo(String packagename) {
         //redirecting user to app Settings
@@ -551,9 +577,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             ActivityCompat.requestPermissions(MainActivity.this,
                     new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, STORAGE_PERMISSION_CODE);
 
-        }
-
-        else {
+        } else {
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, STORAGE_PERMISSION_CODE);
         }
@@ -652,47 +676,82 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
 
     public void Sort() {
         // custom dialog
-        final Dialog dialog = new Dialog(MainActivity.this);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.sort_dialog);
-        final RadioGroup radioGroup = (RadioGroup) dialog.findViewById(R.id.rgroup);
-        final RadioButton sortbyname = (RadioButton) dialog.findViewById(R.id.name);
-        final RadioButton sortbydate = (RadioButton) dialog.findViewById(R.id.date);
-        final RadioButton sortbysize = (RadioButton) dialog.findViewById(R.id.size);
-        final Button btnapply = (Button) dialog.findViewById(R.id.btnApply);
-        String sor = JetDB.getString(MainActivity.this, "sort", "sort by name");
-        if(sor.equals("sort by size")){
-            sortbysize.setChecked(true);
+        bottomSheetDialog = new BottomSheetDialog(MainActivity.this);
+        bottomSheetDialog.setContentView(R.layout.sort_dialog);
+        final RadioGroup radioGroup = (RadioGroup) bottomSheetDialog.findViewById(R.id.rgroup);
+
+        final RadioButton sortByNameAscending = (RadioButton) bottomSheetDialog.findViewById(R.id.name_ascending);
+        final RadioButton sortByNameDescending = (RadioButton) bottomSheetDialog.findViewById(R.id.name_descending);
+
+        final RadioButton sortByDateAscending = (RadioButton) bottomSheetDialog.findViewById(R.id.date_ascending);
+        final RadioButton sortByDateDescending = (RadioButton) bottomSheetDialog.findViewById(R.id.date_descending);
+
+        final RadioButton sortBySizeAscending = (RadioButton) bottomSheetDialog.findViewById(R.id.size_ascending);
+        final RadioButton sortBySizeDescending = (RadioButton) bottomSheetDialog.findViewById(R.id.size_descending);
+
+        final Button btnapply = (Button) bottomSheetDialog.findViewById(R.id.btnApply);
+        String sort = JetDB.getString(MainActivity.this, "sort", "sort by name ascending");
+        if (sort.equals("sort by name ascending")) {
+            sortByNameAscending.setChecked(true);
         }
-        if(sor.equals("sort by date")){
-            sortbydate.setChecked(true);
+        if (sort.equals("sort by size ascending")) {
+            sortBySizeAscending.setChecked(true);
+        }
+        if (sort.equals("sort by size descending")) {
+            sortBySizeDescending.setChecked(true);
+        }
+        if (sort.equals("sort by date ascending")) {
+            sortByDateAscending.setChecked(true);
+        }
+
+        if (sort.equals("sort by date descending")) {
+            sortByDateDescending.setChecked(true);
         }
         btnapply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int selectedId = radioGroup.getCheckedRadioButtonId();
-                if (selectedId == sortbyname.getId()) {
-                    JetDB.putString(MainActivity.this, "sort by name", "sort");
+
+                if (selectedId == sortByNameAscending.getId()) {
+                    JetDB.putString(MainActivity.this, "sort by name ascending", "sort");
                     Sorts();
                     itemAdapter.notifyDataSetChanged();
-                    dialog.dismiss();
+                    bottomSheetDialog.dismiss();
                 }
-                if (selectedId == sortbydate.getId()) {
-                    JetDB.putString(MainActivity.this, "sort by date", "sort");
+                if (selectedId == sortByNameDescending.getId()) {
+                    JetDB.putString(MainActivity.this, "sort by name descending", "sort");
                     Sorts();
                     itemAdapter.notifyDataSetChanged();
-                    dialog.dismiss();
+                    bottomSheetDialog.dismiss();
                 }
-                if (selectedId == sortbysize.getId()) {
-                    JetDB.putString(MainActivity.this, "sort by size", "sort");
+                if (selectedId == sortByDateAscending.getId()) {
+                    JetDB.putString(MainActivity.this, "sort by date ascending", "sort");
                     Sorts();
                     itemAdapter.notifyDataSetChanged();
-                    dialog.dismiss();
+                    bottomSheetDialog.dismiss();
+                }
+                if (selectedId == sortByDateDescending.getId()) {
+                    JetDB.putString(MainActivity.this, "sort by date descending", "sort");
+                    Sorts();
+                    itemAdapter.notifyDataSetChanged();
+                    bottomSheetDialog.dismiss();
+                }
+                if (selectedId == sortBySizeAscending.getId()) {
+                    JetDB.putString(MainActivity.this, "sort by size ascending", "sort");
+                    Sorts();
+                    itemAdapter.notifyDataSetChanged();
+                    bottomSheetDialog.dismiss();
+                }
+                if (selectedId == sortBySizeDescending.getId()) {
+                    JetDB.putString(MainActivity.this, "sort by size descending", "sort");
+                    Sorts();
+                    itemAdapter.notifyDataSetChanged();
+                    bottomSheetDialog.dismiss();
                 }
             }
         });
 
-        dialog.show();
+        bottomSheetDialog.show();
     }
 
 
