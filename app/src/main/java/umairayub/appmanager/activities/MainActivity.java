@@ -1,4 +1,4 @@
-apackage umairayub.appmanager.activities;
+package umairayub.appmanager.activities;
 
 import android.Manifest;
 import android.app.Dialog;
@@ -95,6 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     private AdView mAdView;
     Toolbar toolbar;
     int counter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppThemeCAB);
@@ -117,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             }
         });
 
-        MobileAds.initialize(this, "******************");
+        MobileAds.initialize(this, "*************************");
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

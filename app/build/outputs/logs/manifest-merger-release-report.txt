@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:2:1-35:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fb653acff1590708a66011805a72dcf5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.Binary-Finery:Bungee:master-SNAPSHOT] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\Bungee-master-SNAPSHOT.aar\619c3e2372d2b090e3524b4fe0d723be\AndroidManifest.xml:2:1-17:12
 MERGED from [com.github.Binary-Finery:FabToast:1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\FabToast-1.0.aar\aa3a809b0617d8dd7a02a81c67fa3cdc\AndroidManifest.xml:2:1-17:12
@@ -50,41 +50,47 @@ MERGED from [com.android.support:print:28.0.0] C:\Users\Umair Ayub\.gradle\cache
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\adb2bb0612d7a87b7560fa15cb202394\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\b5702bdcf59128c63eba540fca68612b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-ads-base:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-base-17.1.1.aar\500604c8108ee3aec66b06c87cb572cb\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:3:5-35
-		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:4:5-35
+		INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
-		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
-		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:6:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:6:5-81
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:6:22-78
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:7:5-80
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:7:22-77
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:8:22-77
+uses-permission#android.permission.REQUEST_DELETE_PACKAGES
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:9:5-82
+	android:name
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:9:22-79
 application
-ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:9:5-31:19
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:11:5-33:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fb653acff1590708a66011805a72dcf5\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fb653acff1590708a66011805a72dcf5\AndroidManifest.xml:22:5-20
 MERGED from [com.github.Binary-Finery:Bungee:master-SNAPSHOT] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\Bungee-master-SNAPSHOT.aar\619c3e2372d2b090e3524b4fe0d723be\AndroidManifest.xml:11:5-15:19
@@ -122,51 +128,51 @@ MERGED from [com.google.android.gms:play-services-ads-base:17.1.1] C:\Users\Umai
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\434199183b99a66b869665c78dc94591\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:13:9-48
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:15:9-48
 	android:icon
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:15:9-40
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:17:9-40
 meta-data#com.google.android.gms.ads.APPLICATION_ID
-ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:16:9-18:70
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:18:9-20:70
 	android:value
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:18:13-67
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:20:13-67
 	android:name
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:17:13-69
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:19:13-69
 activity#umairayub.appmanager.activities.MainActivity
-ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:20:9-28:20
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:22:9-30:20
 	android:theme
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:22:13-53
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:24:13-53
 	android:name
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:21:13-52
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:23:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:23:13-27:29
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:28:27-74
 activity#umairayub.appmanager.activities.AboutActivity
-ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:29:9-62
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:31:9-62
 	android:name
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:29:19-59
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:31:19-59
 activity#umairayub.appmanager.activities.AppInfo
-ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:30:9-56
+ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:32:9-56
 	android:name
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:30:19-53
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml:32:19-53
 uses-sdk
-INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support:design:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fb653acff1590708a66011805a72dcf5\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fb653acff1590708a66011805a72dcf5\AndroidManifest.xml:20:5-44
 MERGED from [com.github.Binary-Finery:Bungee:master-SNAPSHOT] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\Bungee-master-SNAPSHOT.aar\619c3e2372d2b090e3524b4fe0d723be\AndroidManifest.xml:7:5-9:41
@@ -259,18 +265,18 @@ MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Umair Ayub\.gradl
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\b5702bdcf59128c63eba540fca68612b\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads-base:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-base-17.1.1.aar\500604c8108ee3aec66b06c87cb572cb\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-ads-base:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-base-17.1.1.aar\500604c8108ee3aec66b06c87cb572cb\AndroidManifest.xml:5:5-44
-INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.google.android.gms:play-services-ads:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-17.1.1.aar\b9cae9baedbce9f7483c61d9ea986111\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Umair Ayub\Downloads\AppManager\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:customtabs:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\customtabs-26.1.0.aar\5f454ab65fecbe9cf87be17efc5e3f1d\AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\040e3b5e6b226f012425a4f95f0380b2\AndroidManifest.xml:26:9-28:38

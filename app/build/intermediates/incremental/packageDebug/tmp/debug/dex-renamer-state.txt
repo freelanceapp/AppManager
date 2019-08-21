@@ -1,4 +1,4 @@
-#Wed Mar 20 01:25:46 PKT 2019
-base.0=C\:\\Users\\Umair Ayub\\AndroidStudioProjects\\AppManager\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Tue May 14 21:03:57 PKT 2019
+base.0=C\:\\Users\\Umair Ayub\\Downloads\\AppManager\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
