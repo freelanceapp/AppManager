@@ -1,6 +1,5 @@
 package umairayub.appmanager;
 
-import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -9,16 +8,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Filter;
-import android.widget.Filterable;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import umairayub.appmanager.activities.MainActivity;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> {
 
@@ -26,10 +24,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
     private List<Item> itemList;
     private List<Item> itemListCopy;
     public int lastPosition = -1;
-    private Context context;
-
-
-
+    Context context;
+    MainActivity mainActivity;
 
     public interface OnItemClickListener{
         void onItemClick(int position);
@@ -42,20 +38,26 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
         this.mListener = listener;
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView appname, packname, version;
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        public TextView appname, packname, version,appsize;
         public ImageView img;
         public Button btnd,btni;
-
-        public MyViewHolder(View view, final OnItemClickListener listener) {
+        public CheckBox checkBox;
+        MainActivity mainActivity;
+        public MyViewHolder(View view, final OnItemClickListener listener,MainActivity mainActivity) {
             super(view);
             appname = (TextView) view.findViewById(R.id.tvN);
             packname = (TextView) view.findViewById(R.id.tvP);
             version = (TextView) view.findViewById(R.id.tvV);
+            appsize = (TextView) view.findViewById(R.id.tvSize);
             img = (ImageView) view.findViewById(R.id.imgV);
             btnd = (Button) view.findViewById(R.id.btnd);
             btni = (Button) view.findViewById(R.id.btni);
+            checkBox = (CheckBox)view.findViewById(R.id.checkBox);
+            checkBox.setOnClickListener(this);
+            this.mainActivity = mainActivity;
 
+            view.setOnLongClickListener((View.OnLongClickListener) context);
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -90,6 +92,22 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
                 }
             });
         }
+
+        @Override
+        public void onClick(View view) {
+            int adapterPosition = getAdapterPosition();
+            Item item = itemList.get(adapterPosition);
+            if(item.isSelected()){
+                itemList.get(adapterPosition).setSelected(false);
+                ((MainActivity)context).prepareSelection(view,adapterPosition);
+                checkBox.setChecked(false);
+            }else {
+                item.setSelected(true);
+                checkBox.setChecked(true);
+            }
+            ((MainActivity)context).prepareSelection(view,adapterPosition);
+
+        }
     }
 
 
@@ -105,18 +123,39 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
                 .inflate(R.layout.item_row, parent, false);
         context = parent.getContext();
 
-        return new MyViewHolder(itemView,mListener);
+       MyViewHolder myviewholder = new MyViewHolder(itemView,mListener,mainActivity);
+
+        return myviewholder;
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
         Item item = itemList.get(position);
         holder.appname.setText(item.getName());
         holder.packname.setText(item.getPack());
-        holder.version.setText(item.getVersionname());
+        holder.version.setText("Version "+item.getVersionname());
+        holder.appsize.setText("Size "+MainActivity.bytesToMb(item.getAppsize()));
         holder.img.setImageDrawable(item.getIcon());
+        if(item.isSelected()){
+            holder.checkBox.setChecked(true);
+            item.setSelected(true);
+        }else {
+            holder.checkBox.setChecked(false);
+            item.setSelected(false);
+        }
+        if(!MainActivity.is_in_Action){
+            holder.checkBox.setVisibility(View.GONE);
+            holder.btni.setVisibility(View.VISIBLE);
+            holder.btnd.setVisibility(View.VISIBLE);
+        }else {
+            holder.btnd.setVisibility(View.GONE);
+            holder.btni.setVisibility(View.GONE);
+            holder.checkBox.setVisibility(View.VISIBLE);
 
 
+
+
+        }
 
         /* load the animation and fire it... */
         Animation animation = AnimationUtils.loadAnimation(context, (holder.getAdapterPosition() > lastPosition) ? R.anim.anim_down : R.anim.anim_up);
@@ -126,10 +165,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
         lastPosition = holder.getAdapterPosition();
     }
 
-//    @Override
-//    public Filter getFilter() {
-//        return filter();
-//    }
+
 
     public void filter(String text) {
         itemList.clear();
@@ -146,22 +182,15 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
         notifyDataSetChanged();
     }
 
-//        @Override
-//        protected void publishResults(CharSequence constraint, FilterResults results) {
-//            itemList.clear();
-//            itemList.addAll((List) results.values);
-//            notifyDataSetChanged();
-//        }
-//    };
     @Override
     public int getItemCount() {
         return itemList.size();
     }
 
-    /* override the following method and add the code... */
-    @Override
-    public void onViewDetachedFromWindow(@NonNull MyViewHolder holder) {
-        super.onViewDetachedFromWindow(holder);
-        holder.itemView.clearAnimation();
-    }
+//    /* override the following method and add the code... */
+//    @Override
+//    public void onViewDetachedFromWindow(@NonNull MyViewHolder holder) {
+//        super.onViewDetachedFromWindow(holder);
+//        holder.itemView.clearAnimation();
+//    }
 }

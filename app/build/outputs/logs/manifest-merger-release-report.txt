@@ -1,0 +1,319 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fb653acff1590708a66011805a72dcf5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.Binary-Finery:Bungee:master-SNAPSHOT] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\Bungee-master-SNAPSHOT.aar\619c3e2372d2b090e3524b4fe0d723be\AndroidManifest.xml:2:1-17:12
+MERGED from [com.github.Binary-Finery:FabToast:1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\FabToast-1.0.aar\aa3a809b0617d8dd7a02a81c67fa3cdc\AndroidManifest.xml:2:1-17:12
+MERGED from [com.github.Binary-Finery:JetDB:1.0.4] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\JetDB-1.0.4.aar\b95794104f5cf13c15e95f9588ba6094\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\5684e78ac842bb53b91ec44397b3bbe5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-ads:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-17.1.1.aar\b9cae9baedbce9f7483c61d9ea986111\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\bd3922a29fa7d1a696a9b0de04200a5e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\f2289464871e8cf073ab7e9a929d4ef4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\eb9308c316b531e0a7c6ae80e48c9e69\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.Gaineyj0349:ExceptionBuddy:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\ExceptionBuddy-1.1.1.aar\21481ac4ea755763e004bf3cd7a63fab\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\1283fdd11045b68a5c6510c8dd6363db\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customtabs:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\customtabs-26.1.0.aar\5f454ab65fecbe9cf87be17efc5e3f1d\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\cd0388bf2fc00c366f71ae00ad631188\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.android.gms:play-services-gass:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-gass-17.1.1.aar\d525235008aa426fee4493d993f47a1f\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.4] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.4.aar\47145d918a63cd4cd32a903a9ec0b3c5\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\faaae27675b556cd2faa24b85cc93825\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\040e3b5e6b226f012425a4f95f0380b2\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\81de11a1912b82422b6ddb2e3dfbbcd2\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\770cdad7aae3811c0c7135fc4fd657f3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\c6ff4c53e2649484f5bdc32281372337\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\87c51f492fab1d599f98cdc6adea970d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\1db365dd2afd5a1a9464c3452e144d33\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d68f3fc2662e2a4ec7ccfe778d623e21\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\08ca0df8459f9c147d7718eeb02cdd4e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\0744b44a0adea653d8374ff537aa75af\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\73f22a80d545d7d1e853b12ccb091b18\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\b5d268d13b3661b4795697d288e5efb9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\f9a29a461e112e95c86270a4ca7f8c0f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\a7516065354559cdaa794aa160270542\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2075faf96ca86da006cd67d207a798ed\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\7bb238b0443c0c961f9e794312ea6604\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\434199183b99a66b869665c78dc94591\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\8e8d93f27ecbcd9cf4b2df09c39f38b9\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\6c5a0ee5c09f63acb8be0697e342ef60\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\209ec641876c52f2f2e719935d3527b1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\cb15f52ce3c780baebe6920f479cd15b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\f3516ac0cfc476db99bc7ce79dddb93f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\65c2b881199c8be319831a482af61975\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\b53fa25faacc9d6be76dc078454b4a0b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\ad7fa395e12d69ee0960c5eda743364b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\4e12896723f1e45e41f41704490071aa\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\adb2bb0612d7a87b7560fa15cb202394\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\b5702bdcf59128c63eba540fca68612b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-ads-base:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-base-17.1.1.aar\500604c8108ee3aec66b06c87cb572cb\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
+	package
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
+		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:1-33:12
+		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:7:22-77
+application
+ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:9:5-31:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fb653acff1590708a66011805a72dcf5\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fb653acff1590708a66011805a72dcf5\AndroidManifest.xml:22:5-20
+MERGED from [com.github.Binary-Finery:Bungee:master-SNAPSHOT] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\Bungee-master-SNAPSHOT.aar\619c3e2372d2b090e3524b4fe0d723be\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.Binary-Finery:Bungee:master-SNAPSHOT] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\Bungee-master-SNAPSHOT.aar\619c3e2372d2b090e3524b4fe0d723be\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.Binary-Finery:FabToast:1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\FabToast-1.0.aar\aa3a809b0617d8dd7a02a81c67fa3cdc\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.Binary-Finery:FabToast:1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\FabToast-1.0.aar\aa3a809b0617d8dd7a02a81c67fa3cdc\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\eb9308c316b531e0a7c6ae80e48c9e69\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\eb9308c316b531e0a7c6ae80e48c9e69\AndroidManifest.xml:9:5-20
+MERGED from [com.github.Gaineyj0349:ExceptionBuddy:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\ExceptionBuddy-1.1.1.aar\21481ac4ea755763e004bf3cd7a63fab\AndroidManifest.xml:11:5-20
+MERGED from [com.github.Gaineyj0349:ExceptionBuddy:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\ExceptionBuddy-1.1.1.aar\21481ac4ea755763e004bf3cd7a63fab\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:customtabs:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\customtabs-26.1.0.aar\5f454ab65fecbe9cf87be17efc5e3f1d\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:customtabs:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\customtabs-26.1.0.aar\5f454ab65fecbe9cf87be17efc5e3f1d\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\cd0388bf2fc00c366f71ae00ad631188\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\cd0388bf2fc00c366f71ae00ad631188\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:26:5-40:19
+MERGED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:26:5-40:19
+MERGED from [com.google.android.gms:play-services-gass:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-gass-17.1.1.aar\d525235008aa426fee4493d993f47a1f\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-gass:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-gass-17.1.1.aar\d525235008aa426fee4493d993f47a1f\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:27:5-28:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:27:5-28:19
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.4] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.4.aar\47145d918a63cd4cd32a903a9ec0b3c5\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.4] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.4.aar\47145d918a63cd4cd32a903a9ec0b3c5\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\faaae27675b556cd2faa24b85cc93825\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\faaae27675b556cd2faa24b85cc93825\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\040e3b5e6b226f012425a4f95f0380b2\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\040e3b5e6b226f012425a4f95f0380b2\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\81de11a1912b82422b6ddb2e3dfbbcd2\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\81de11a1912b82422b6ddb2e3dfbbcd2\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\434199183b99a66b869665c78dc94591\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\434199183b99a66b869665c78dc94591\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\8e8d93f27ecbcd9cf4b2df09c39f38b9\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\8e8d93f27ecbcd9cf4b2df09c39f38b9\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-base:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-base-17.1.1.aar\500604c8108ee3aec66b06c87cb572cb\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-base:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-base-17.1.1.aar\500604c8108ee3aec66b06c87cb572cb\AndroidManifest.xml:7:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\434199183b99a66b869665c78dc94591\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:13:9-48
+	android:icon
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:15:9-40
+meta-data#com.google.android.gms.ads.APPLICATION_ID
+ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:16:9-18:70
+	android:value
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:18:13-67
+	android:name
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:17:13-69
+activity#umairayub.appmanager.activities.MainActivity
+ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:20:9-28:20
+	android:theme
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:22:13-53
+	android:name
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:21:13-52
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:23:13-27:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:26:27-74
+activity#umairayub.appmanager.activities.AboutActivity
+ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:29:9-62
+	android:name
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:29:19-59
+activity#umairayub.appmanager.activities.AppInfo
+ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:30:9-56
+	android:name
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml:30:19-53
+uses-sdk
+INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fb653acff1590708a66011805a72dcf5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fb653acff1590708a66011805a72dcf5\AndroidManifest.xml:20:5-44
+MERGED from [com.github.Binary-Finery:Bungee:master-SNAPSHOT] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\Bungee-master-SNAPSHOT.aar\619c3e2372d2b090e3524b4fe0d723be\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.Binary-Finery:Bungee:master-SNAPSHOT] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\Bungee-master-SNAPSHOT.aar\619c3e2372d2b090e3524b4fe0d723be\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.Binary-Finery:FabToast:1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\FabToast-1.0.aar\aa3a809b0617d8dd7a02a81c67fa3cdc\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.Binary-Finery:FabToast:1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\FabToast-1.0.aar\aa3a809b0617d8dd7a02a81c67fa3cdc\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.Binary-Finery:JetDB:1.0.4] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\JetDB-1.0.4.aar\b95794104f5cf13c15e95f9588ba6094\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.Binary-Finery:JetDB:1.0.4] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\JetDB-1.0.4.aar\b95794104f5cf13c15e95f9588ba6094\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\5684e78ac842bb53b91ec44397b3bbe5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\5684e78ac842bb53b91ec44397b3bbe5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-17.1.1.aar\b9cae9baedbce9f7483c61d9ea986111\AndroidManifest.xml:21:5-23:62
+MERGED from [com.google.android.gms:play-services-ads:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-17.1.1.aar\b9cae9baedbce9f7483c61d9ea986111\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\bd3922a29fa7d1a696a9b0de04200a5e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\bd3922a29fa7d1a696a9b0de04200a5e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\f2289464871e8cf073ab7e9a929d4ef4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\f2289464871e8cf073ab7e9a929d4ef4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\eb9308c316b531e0a7c6ae80e48c9e69\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\eb9308c316b531e0a7c6ae80e48c9e69\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.Gaineyj0349:ExceptionBuddy:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\ExceptionBuddy-1.1.1.aar\21481ac4ea755763e004bf3cd7a63fab\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.Gaineyj0349:ExceptionBuddy:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\ExceptionBuddy-1.1.1.aar\21481ac4ea755763e004bf3cd7a63fab\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\1283fdd11045b68a5c6510c8dd6363db\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\1283fdd11045b68a5c6510c8dd6363db\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\customtabs-26.1.0.aar\5f454ab65fecbe9cf87be17efc5e3f1d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\customtabs-26.1.0.aar\5f454ab65fecbe9cf87be17efc5e3f1d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\cd0388bf2fc00c366f71ae00ad631188\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\cd0388bf2fc00c366f71ae00ad631188\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gass:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-gass-17.1.1.aar\d525235008aa426fee4493d993f47a1f\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-gass:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-gass-17.1.1.aar\d525235008aa426fee4493d993f47a1f\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.4] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.4.aar\47145d918a63cd4cd32a903a9ec0b3c5\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.4] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.4.aar\47145d918a63cd4cd32a903a9ec0b3c5\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\faaae27675b556cd2faa24b85cc93825\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\faaae27675b556cd2faa24b85cc93825\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\040e3b5e6b226f012425a4f95f0380b2\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\040e3b5e6b226f012425a4f95f0380b2\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\81de11a1912b82422b6ddb2e3dfbbcd2\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\81de11a1912b82422b6ddb2e3dfbbcd2\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\770cdad7aae3811c0c7135fc4fd657f3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\770cdad7aae3811c0c7135fc4fd657f3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\c6ff4c53e2649484f5bdc32281372337\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\c6ff4c53e2649484f5bdc32281372337\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\87c51f492fab1d599f98cdc6adea970d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\87c51f492fab1d599f98cdc6adea970d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\1db365dd2afd5a1a9464c3452e144d33\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\1db365dd2afd5a1a9464c3452e144d33\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d68f3fc2662e2a4ec7ccfe778d623e21\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d68f3fc2662e2a4ec7ccfe778d623e21\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\08ca0df8459f9c147d7718eeb02cdd4e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\08ca0df8459f9c147d7718eeb02cdd4e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\0744b44a0adea653d8374ff537aa75af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\0744b44a0adea653d8374ff537aa75af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\73f22a80d545d7d1e853b12ccb091b18\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\73f22a80d545d7d1e853b12ccb091b18\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\b5d268d13b3661b4795697d288e5efb9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\b5d268d13b3661b4795697d288e5efb9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\f9a29a461e112e95c86270a4ca7f8c0f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\f9a29a461e112e95c86270a4ca7f8c0f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\a7516065354559cdaa794aa160270542\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\a7516065354559cdaa794aa160270542\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2075faf96ca86da006cd67d207a798ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\2075faf96ca86da006cd67d207a798ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\7bb238b0443c0c961f9e794312ea6604\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\7bb238b0443c0c961f9e794312ea6604\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\434199183b99a66b869665c78dc94591\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\434199183b99a66b869665c78dc94591\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\8e8d93f27ecbcd9cf4b2df09c39f38b9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\8e8d93f27ecbcd9cf4b2df09c39f38b9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\6c5a0ee5c09f63acb8be0697e342ef60\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\6c5a0ee5c09f63acb8be0697e342ef60\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\209ec641876c52f2f2e719935d3527b1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\209ec641876c52f2f2e719935d3527b1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\cb15f52ce3c780baebe6920f479cd15b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\cb15f52ce3c780baebe6920f479cd15b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\f3516ac0cfc476db99bc7ce79dddb93f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\f3516ac0cfc476db99bc7ce79dddb93f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\65c2b881199c8be319831a482af61975\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\65c2b881199c8be319831a482af61975\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\b53fa25faacc9d6be76dc078454b4a0b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\b53fa25faacc9d6be76dc078454b4a0b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\ad7fa395e12d69ee0960c5eda743364b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\ad7fa395e12d69ee0960c5eda743364b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\4e12896723f1e45e41f41704490071aa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\4e12896723f1e45e41f41704490071aa\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\adb2bb0612d7a87b7560fa15cb202394\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\adb2bb0612d7a87b7560fa15cb202394\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\b5702bdcf59128c63eba540fca68612b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\b5702bdcf59128c63eba540fca68612b\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-base:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-base-17.1.1.aar\500604c8108ee3aec66b06c87cb572cb\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-base:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-base-17.1.1.aar\500604c8108ee3aec66b06c87cb572cb\AndroidManifest.xml:5:5-44
+INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.google.android.gms:play-services-ads:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-17.1.1.aar\b9cae9baedbce9f7483c61d9ea986111\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Umair Ayub\AndroidStudioProjects\AppManager\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:customtabs:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\customtabs-26.1.0.aar\5f454ab65fecbe9cf87be17efc5e3f1d\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\040e3b5e6b226f012425a4f95f0380b2\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\040e3b5e6b226f012425a4f95f0380b2\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\81de11a1912b82422b6ddb2e3dfbbcd2\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\81de11a1912b82422b6ddb2e3dfbbcd2\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:customtabs:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\customtabs-26.1.0.aar\5f454ab65fecbe9cf87be17efc5e3f1d\AndroidManifest.xml:25:13-35
+	android:name
+		ADDED from [com.android.support:customtabs:26.1.0] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\customtabs-26.1.0.aar\5f454ab65fecbe9cf87be17efc5e3f1d\AndroidManifest.xml:24:13-51
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:24:22-76
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:29:9-33:64
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:32:13-37
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:31:13-122
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:33:13-61
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:30:13-65
+provider#com.google.android.gms.ads.MobileAdsInitProvider
+ADDED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:35:9-39:39
+	android:authorities
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:37:13-73
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:38:13-37
+	android:initOrder
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:39:13-36
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.1.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-17.1.1.aar\1d30b2551ce67767338e49412cf58b84\AndroidManifest.xml:36:13-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-sdk-api:16.0.3] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.0.3.aar\91e6fe5d68b5b02e74c29b0c43e91caa\AndroidManifest.xml:25:22-65
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\faaae27675b556cd2faa24b85cc93825\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\faaae27675b556cd2faa24b85cc93825\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Umair Ayub\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\faaae27675b556cd2faa24b85cc93825\AndroidManifest.xml:24:13-58

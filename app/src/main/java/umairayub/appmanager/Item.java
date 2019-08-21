@@ -10,19 +10,28 @@ public class Item {
     private String name,pack,versionname;
     private long lastUpdateTime,firstInstallTime;
     private Drawable icon;
+    private long appsize;
+    private boolean isSelected;
+
+    public boolean isSelected(){
+        return  isSelected;
+    }
+    public void setSelected(boolean selected){
+        isSelected = selected;
+    }
 
 
-
-
-    public  Item (String name, String pack, String versionname, long firstInstallTime, long lastUpdateTime, Drawable icon){
+    public  Item (String name, String pack, String versionname, long firstInstallTime, long lastUpdateTime, Drawable icon, long appsize){
         this.name = name;
         this.pack = pack;
         this.versionname = versionname;
         this.firstInstallTime = firstInstallTime;
         this.lastUpdateTime = lastUpdateTime;
         this.icon = icon;
-
+        this.appsize = appsize;
     }
+
+
     public String getName() {
         return name;
     }
@@ -40,5 +49,9 @@ public class Item {
     }
     public Drawable getIcon() {
         return icon;
+    }
+
+    public long getAppsize() {
+        return appsize;
     }
 }
