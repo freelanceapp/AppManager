@@ -24,10 +24,10 @@ public final class R {
         public static final int abc_slide_out_top = 0x7f010009;
         public static final int abc_tooltip_enter = 0x7f01000a;
         public static final int abc_tooltip_exit = 0x7f01000b;
-        public static final int design_bottom_sheet_slide_in = 0x7f010010;
-        public static final int design_bottom_sheet_slide_out = 0x7f010011;
-        public static final int design_snackbar_in = 0x7f010012;
-        public static final int design_snackbar_out = 0x7f010013;
+        public static final int design_bottom_sheet_slide_in = 0x7f01000e;
+        public static final int design_bottom_sheet_slide_out = 0x7f01000f;
+        public static final int design_snackbar_in = 0x7f010010;
+        public static final int design_snackbar_out = 0x7f010011;
     }
     public static final class animator {
         private animator() {}

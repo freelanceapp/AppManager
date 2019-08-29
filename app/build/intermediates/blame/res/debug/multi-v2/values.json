@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\AppManager\\AppManager\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Umair Ayub\\Desktop\\AppManager\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Umair Ayub\\.gradle\\caches\\transforms-1\\files-1.1\\transition-28.0.0.aar\\611ba787293deb7fcc6381a1e0e5202b\\res\\values\\values.xml",
@@ -57,7 +57,24 @@
                     }
                 },
                 {
-                    "source": "D:\\AppManager\\AppManager\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\Umair Ayub\\Desktop\\AppManager\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "47",
+                        "endOffsets": "60"
+                    },
+                    "to": {
+                        "startLines": "2128",
+                        "startColumns": "4",
+                        "startOffsets": "126366",
+                        "endColumns": "47",
+                        "endOffsets": "126409"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Umair Ayub\\Desktop\\AppManager\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,22,12",
                         "startColumns": "4,4,4",
@@ -73,23 +90,6 @@
                         "endLines": "2169,2174,2183",
                         "endColumns": "12,12,12",
                         "endOffsets": "129996,130331,130761"
-                    }
-                },
-                {
-                    "source": "D:\\AppManager\\AppManager\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "47",
-                        "endOffsets": "60"
-                    },
-                    "to": {
-                        "startLines": "2128",
-                        "startColumns": "4",
-                        "startOffsets": "126366",
-                        "endColumns": "47",
-                        "endOffsets": "126409"
                     }
                 },
                 {
@@ -148,23 +148,6 @@
                     }
                 },
                 {
-                    "source": "D:\\AppManager\\AppManager\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "4,2,3,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "157,57,105,204",
-                        "endColumns": "45,46,50,47",
-                        "endOffsets": "198,99,151,247"
-                    },
-                    "to": {
-                        "startLines": "67,68,69,70",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "4209,4255,4302,4353",
-                        "endColumns": "45,46,50,47",
-                        "endOffsets": "4250,4297,4348,4396"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Umair Ayub\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-ads-lite-17.1.1.aar\\769f4df65e05c389b2f3837ae7e54a59\\res\\values\\values.xml",
                     "from": {
                         "startLines": "14,4",
@@ -181,6 +164,23 @@
                         "endLines": "258,4078",
                         "endColumns": "20,8",
                         "endOffsets": "15787,255330"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Umair Ayub\\Desktop\\AppManager\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "4,2,3,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "157,57,105,204",
+                        "endColumns": "45,46,50,47",
+                        "endOffsets": "198,99,151,247"
+                    },
+                    "to": {
+                        "startLines": "67,68,69,70",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "4209,4255,4302,4353",
+                        "endColumns": "45,46,50,47",
+                        "endOffsets": "4250,4297,4348,4396"
                     }
                 },
                 {

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\AppManager\\AppManager\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Users\\Umair Ayub\\Desktop\\AppManager\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Umair Ayub\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\7d0fafb8af3fe4117f334a5d9b6c5d0b\\res\\values-v21\\values-v21.xml",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "D:\\AppManager\\AppManager\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "source": "C:\\Users\\Umair Ayub\\Desktop\\AppManager\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
                         "startLines": "3,21,11",
                         "startColumns": "4,4,4",

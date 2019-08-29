@@ -17,7 +17,7 @@
         android:layout_gravity="center"
         android:visibility="gone"
         ads:adSize="SMART_BANNER"
-        ads:adUnitId="*************************" />
+        ads:adUnitId="*****************" />
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipe"

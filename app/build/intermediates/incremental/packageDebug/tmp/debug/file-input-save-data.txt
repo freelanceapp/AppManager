@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Tue Jul 09 02:38:15 PKT 2019
+#Thu Aug 29 15:18:02 PKT 2019
 0.baseType=DIRECTORY
-0.base=D\:\\AppManager\\AppManager\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.base=C\:\\Users\\Umair Ayub\\Desktop\\AppManager\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 0.path=classes.dex
 0.set=DEX
 count=1

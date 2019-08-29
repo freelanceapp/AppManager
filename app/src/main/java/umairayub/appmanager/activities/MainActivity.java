@@ -65,7 +65,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
-import spencerstudios.com.bungeelib.Bungee;
+//import spencerstudios.com.bungeelib.Bungee;
 import spencerstudios.com.fab_toast.FabToast;
 import spencerstudios.com.jetdblib.JetDB;
 import umairayub.appmanager.Item;
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             }
         });
 
-        MobileAds.initialize(this, "*************************");
+        MobileAds.initialize(this, "*******************");
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -143,6 +143,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             @Override
             public void onAdFailedToLoad(int errorCode) {
                 // Code to be executed when an ad request fails.
+                Toast.makeText(MainActivity.this, "Ad Failed to Load", Toast.LENGTH_SHORT).show();
                 AdRequest adRequest = new AdRequest.Builder().build();
                 mAdView.loadAd(adRequest);
             }
@@ -325,7 +326,6 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             @Override
             public void onInfoClick(int position) {
                 appinfo(app.get(position).getPack());
-                Bungee.fade(MainActivity.this);
 
             }
 
@@ -737,6 +737,9 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         if (sort.equals("sort by name ascending")) {
             sortByNameAscending.setChecked(true);
         }
+        if (sort.equals("sort by name descending")) {
+            sortByNameDescending.setChecked(true);
+        }
         if (sort.equals("sort by size ascending")) {
             sortBySizeAscending.setChecked(true);
         }
@@ -806,7 +809,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
 
     @Override
     protected void onPause() {
-        Bungee.fade(this);
+//        Bungee.fade(this);
         super.onPause();
     }
 

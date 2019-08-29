@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import spencerstudios.com.bungeelib.Bungee;
+//import spencerstudios.com.bungeelib.Bungee;
 import umairayub.appmanager.R;
 
 public class AppInfo extends AppCompatActivity {
@@ -71,7 +71,7 @@ public class AppInfo extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        Bungee.fade(AppInfo.this);
+//        Bungee.fade(AppInfo.this);
         super.onPause();
     }
 }
