@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 //import spencerstudios.com.bungeelib.Bungee;
+import spencerstudios.com.bungeelib.Bungee;
 import umairayub.appmanager.R;
 
 public class AboutActivity extends AppCompatActivity {
@@ -33,7 +34,7 @@ public class AboutActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-//        Bungee.fade(AboutActivity.this);
+        Bungee.fade(AboutActivity.this);
         super.onPause();
     }
 }

@@ -64,7 +64,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
         if (isGrid){
             Item item = itemList.get(position);
             holder.appname.setText(item.getName());
-            holder.appsize.setText("Size " + MainActivity.bytesToMb(item.getAppsize()));
+            holder.appsize.setText(MainActivity.bytesToMb(item.getAppsize()));
             holder.img.setImageDrawable(item.getIcon());
             if (item.isSelected()) {
                 holder.checkBox.setChecked(true);

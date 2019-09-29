@@ -65,7 +65,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
-//import spencerstudios.com.bungeelib.Bungee;
+import spencerstudios.com.bungeelib.Bungee;
 import spencerstudios.com.fab_toast.FabToast;
 import spencerstudios.com.jetdblib.JetDB;
 import umairayub.appmanager.Item;
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             }
         });
 
-        MobileAds.initialize(this, "*******************");
+        MobileAds.initialize(this, "ca-app-pub-3967079668781870~9657487693");
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -143,7 +143,6 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             @Override
             public void onAdFailedToLoad(int errorCode) {
                 // Code to be executed when an ad request fails.
-                Toast.makeText(MainActivity.this, "Ad Failed to Load", Toast.LENGTH_SHORT).show();
                 AdRequest adRequest = new AdRequest.Builder().build();
                 mAdView.loadAd(adRequest);
             }
@@ -184,7 +183,6 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     public void setDisplayMode() {
         display_mode = JetDB.getBoolean(MainActivity.this, "display_mode", false);
         itemAdapter = new ItemAdapter(app, display_mode);
-//        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         if (!display_mode) {
             RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
             recyclerView.setLayoutManager(mLayoutManager);
@@ -196,7 +194,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             PrepareOnCLick();
         } else {
             GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
-            gridLayoutManager.setOrientation(LinearLayoutManager.VERTICAL); // set Horizontal Orientation
+            gridLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
             recyclerView.setLayoutManager(gridLayoutManager);
             recyclerView.setItemAnimator(new DefaultItemAnimator());
             DividerItemDecoration itemDecorator = new DividerItemDecoration(MainActivity.this, DividerItemDecoration.VERTICAL);
@@ -214,108 +212,104 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         itemAdapter.setOnItemClickListener(new ItemAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                Log.d("Click","Click");
+                Log.d("Click", "Click");
 //                if (!is_in_Action) {
-                    DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-                    long ftt = app.get(position).getFirstInstallTime();
-                    long ltt = app.get(position).getLastUpdateTime();
-                    Calendar calendar = Calendar.getInstance();
-                    calendar.setTimeInMillis(ftt);
+                DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+                long ftt = app.get(position).getFirstInstallTime();
+                long ltt = app.get(position).getLastUpdateTime();
+                Calendar calendar = Calendar.getInstance();
+                calendar.setTimeInMillis(ftt);
 
-                    Calendar mCalender = Calendar.getInstance();
-                    mCalender.setTimeInMillis(ltt);
+                Calendar mCalender = Calendar.getInstance();
+                mCalender.setTimeInMillis(ltt);
 
-                    appname = app.get(position).getName();
-                    packagename = app.get(position).getPack();
-                    String version = app.get(position).getVersionname();
-                    String lastupdate = formatter.format(mCalender.getTime());
-                    String firstinstall = formatter.format(calendar.getTime());
-                    String Mpermissins = getPermissionsByPackageName(app.get(position).getPack());
+                appname = app.get(position).getName();
+                packagename = app.get(position).getPack();
+                String version = app.get(position).getVersionname();
+                String lastupdate = formatter.format(mCalender.getTime());
+                String firstinstall = formatter.format(calendar.getTime());
+                String Mpermissins = getPermissionsByPackageName(app.get(position).getPack());
 
-                    bundle = new Bundle();
-                    bundle.putString("Name", appname);
-                    bundle.putString("Package", packagename);
-                    bundle.putString("Version", version);
-                    bundle.putString("FirstTime", firstinstall);
-                    bundle.putString("LastUpdate", lastupdate);
-                    if (Mpermissins.equals("")) {
-                        bundle.putString("Permissions", "No Permissions Requested or Granted");
-                    } else {
-                        bundle.putString("Permissions", Mpermissins);
-                    }
-                    // custom dialog
-                    final Dialog dialog = new Dialog(MainActivity.this);
-                    dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                    dialog.setContentView(R.layout.custom);
-                    dialog.setTitle("Options...");
+                bundle = new Bundle();
+                bundle.putString("Name", appname);
+                bundle.putString("Package", packagename);
+                bundle.putString("Version", version);
+                bundle.putString("FirstTime", firstinstall);
+                bundle.putString("LastUpdate", lastupdate);
+                if (Mpermissins.equals("")) {
+                    bundle.putString("Permissions", "No Permissions Requested or Granted");
+                } else {
+                    bundle.putString("Permissions", Mpermissins);
+                }
+                // custom dialog
+                final Dialog dialog = new Dialog(MainActivity.this);
+                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                dialog.setContentView(R.layout.custom);
+                dialog.setTitle("Options...");
 
-                    TextView textView = (TextView) dialog.findViewById(R.id.tv_appN);
-                    ImageView ic = (ImageView) dialog.findViewById(R.id.imgVic);
+                TextView textView = (TextView) dialog.findViewById(R.id.tv_appN);
+                ImageView ic = (ImageView) dialog.findViewById(R.id.imgVic);
 
-                    textView.setText(appname);
-                    ic.setImageDrawable(app.get(position).getIcon());
-                    ListView listView = (ListView) dialog.findViewById(R.id.menulist);
-                    ArrayList<String> list = new ArrayList<String>();
-                    listAdapter = new ArrayAdapter<String>(MainActivity.this, R.layout.menu, R.id.tv_itm, list);
+                textView.setText(appname);
+                ic.setImageDrawable(app.get(position).getIcon());
+                ListView listView = (ListView) dialog.findViewById(R.id.menulist);
+                ArrayList<String> list = new ArrayList<String>();
+                listAdapter = new ArrayAdapter<String>(MainActivity.this, R.layout.menu, R.id.tv_itm, list);
 
-                    list.add("Launch App");
-                    list.add("App Info");
-                    list.add("Extract/Backup Apk");
-                    list.add("Open in Play Store");
-                    list.add("Uninstall");
-                    list.add("Share App(Only Link)");
-                    list.add("");
-                    listView.setAdapter(listAdapter);
+                list.add("Launch App");
+                list.add("App Info");
+                list.add("Extract/Backup Apk");
+                list.add("Open in Play Store");
+                list.add("Uninstall");
+                list.add("Share App(Only Link)");
+                list.add("");
+                listView.setAdapter(listAdapter);
 
-                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                            if (position == 0) {
-                                Launch(packagename);
-                                dialog.dismiss();
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        if (position == 0) {
+                            Launch(packagename);
+                            dialog.dismiss();
 
-                            }
-                            if (position == 1) {
-                                Intent intent = new Intent(MainActivity.this, AppInfo.class);
-                                intent.putExtras(bundle);
-                                startActivity(intent);
-                                dialog.dismiss();
-
-                            }
-                            if (position == 2) {
-                                requestStoragePermission();
-                                FabToast.makeText(MainActivity.this, "Extracting Apk", FabToast.LENGTH_LONG, FabToast.INFORMATION, FabToast.POSITION_DEFAULT).show();
-                                filePath = getMyApk(packagename);
-                                newFilePath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/AppManager/Apks";
-                                newFilePath = copyFile(filePath, newFilePath);
-                                new Handler().postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        FabToast.makeText(MainActivity.this, " Extracted to " + newFilePath, FabToast.LENGTH_SHORT, FabToast.SUCCESS, FabToast.POSITION_DEFAULT).show();
-                                    }
-                                }, 1200); // will trigger your code after 1.1 seconds
-                            }
-                            if (position == 3) {
-                                openGP(packagename);
-                                dialog.dismiss();
-
-                            }
-                            if (position == 4) {
-                                delete(packagename);
-                                dialog.dismiss();
-
-                            }
-                            if (position == 5) {
-                                share(packagename, appname);
-                                dialog.dismiss();
-                            }
                         }
-                    });
-                    dialog.show();
+                        if (position == 1) {
+                            Intent intent = new Intent(MainActivity.this, AppInfo.class);
+                            intent.putExtras(bundle);
+                            startActivity(intent);
+                            dialog.dismiss();
 
-////                } else {
-//
-//                }
+                        }
+                        if (position == 2) {
+                            requestStoragePermission();
+                            FabToast.makeText(MainActivity.this, "Extracting Apk", FabToast.LENGTH_LONG, FabToast.INFORMATION, FabToast.POSITION_DEFAULT).show();
+                            filePath = getMyApk(packagename);
+                            newFilePath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/AppManager/Apks";
+                            newFilePath = copyFile(filePath, newFilePath);
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    FabToast.makeText(MainActivity.this, " Extracted to " + newFilePath, FabToast.LENGTH_SHORT, FabToast.SUCCESS, FabToast.POSITION_DEFAULT).show();
+                                }
+                            }, 1200); // will trigger your code after 1.1 seconds
+                        }
+                        if (position == 3) {
+                            openGP(packagename);
+                            dialog.dismiss();
+
+                        }
+                        if (position == 4) {
+                            delete(packagename);
+                            dialog.dismiss();
+
+                        }
+                        if (position == 5) {
+                            share(packagename, appname);
+                            dialog.dismiss();
+                        }
+                    }
+                });
+                dialog.show();
             }
 
             @Override
@@ -626,10 +620,10 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             MenuInflater inflater = getMenuInflater();
             inflater.inflate(R.menu.main, menu);
 
-            display_mode = JetDB.getBoolean(MainActivity.this,"display_mode",false);
-            if (display_mode){
+            display_mode = JetDB.getBoolean(MainActivity.this, "display_mode", false);
+            if (display_mode) {
                 menu.findItem(R.id.display_mode).setTitle("ListView");
-            }else{
+            } else {
                 menu.findItem(R.id.display_mode).setTitle("GridView");
             }
 
@@ -704,8 +698,6 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
                     updateCounter(counter);
                     itemAdapter.notifyDataSetChanged();
                 }
-
-
                 break;
             case android.R.id.home:
                 clearActionMode();
@@ -809,7 +801,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
 
     @Override
     protected void onPause() {
-//        Bungee.fade(this);
+        Bungee.fade(this);
         super.onPause();
     }
 
@@ -831,9 +823,6 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             is_in_Action = true;
             itemAdapter.notifyDataSetChanged();
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        } else {
-
         }
         return true;
 
