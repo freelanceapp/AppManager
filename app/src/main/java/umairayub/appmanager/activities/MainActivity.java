@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             PrepareOnCLick();
         } else {
             GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
-            gridLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+            gridLayoutManager.setOrientation(RecyclerView.VERTICAL);
             recyclerView.setLayoutManager(gridLayoutManager);
             recyclerView.setItemAnimator(new DefaultItemAnimator());
             DividerItemDecoration itemDecorator = new DividerItemDecoration(MainActivity.this, DividerItemDecoration.VERTICAL);
