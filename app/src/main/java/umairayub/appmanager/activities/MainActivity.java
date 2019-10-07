@@ -1,6 +1,7 @@
 package umairayub.appmanager.activities;
 
 import android.Manifest;
+import android.app.ActivityManager;
 import android.app.Dialog;
 import android.content.ComponentName;
 import android.content.Context;
@@ -50,6 +51,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -393,29 +395,48 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         startActivity(i);
     }
 
+    // Get a MemoryInfo object for the device's current memory status.
+    private ActivityManager.MemoryInfo getAvailableMemory() {
+        ActivityManager activityManager = (ActivityManager) this.getSystemService(ACTIVITY_SERVICE);
+        ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
+        activityManager.getMemoryInfo(memoryInfo);
+        return memoryInfo;
+    }
+
     //get All Installed Apps
     private void getApps() {
-        PackageManager pm = getPackageManager();
-        List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
-        for (ApplicationInfo packageinfo : packages) {
-            // Filtering out System Apps
-            if ((packageinfo.flags & ApplicationInfo.FLAG_SYSTEM) == 0) {
-                PackageInfo info = null;
-                try {
-                    info = pm.getPackageInfo(packageinfo.packageName, 0);
+        ActivityManager.MemoryInfo memoryInfo = getAvailableMemory();
+        if (!memoryInfo.lowMemory) {
+            PackageManager pm = getPackageManager();
+            List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
+            for (int i = 0; i < packages.size(); i++) {
+                // Filtering out System Apps
+                ApplicationInfo packageinfo = packages.get(i);
+                if ((packageinfo.flags & ApplicationInfo.FLAG_SYSTEM) == 0) {
+                    PackageInfo info = null;
+                    try {
+                        info = pm.getPackageInfo(packageinfo.packageName, 0);
+                        app.add(new Item(pm.getApplicationLabel(packageinfo).toString(),
+                                packageinfo.packageName,
+                                info.versionName,
+                                info.firstInstallTime,
+                                info.lastUpdateTime,
+                                pm.getApplicationIcon(packageinfo),
+                                GetApkSize(info.applicationInfo.publicSourceDir)));
 
-                } catch (PackageManager.NameNotFoundException e) {
-                    e.printStackTrace();
+                    } catch (PackageManager.NameNotFoundException e) {
+                        e.printStackTrace();
+                    }
                 }
-                app.add(new Item(pm.getApplicationLabel(packageinfo).toString(),
-                        packageinfo.packageName,
-                        info.versionName,
-                        info.firstInstallTime,
-                        info.lastUpdateTime,
-                        pm.getApplicationIcon(packageinfo),
-                        GetApkSize(info.applicationInfo.publicSourceDir)));
-
             }
+        } else {
+            Snackbar snackbar = Snackbar.make(recyclerView, "Low memory, please release some.", Snackbar.LENGTH_INDEFINITE);
+            snackbar.setAction("Try again", new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    getApps();
+                }
+            });
         }
     }
 
