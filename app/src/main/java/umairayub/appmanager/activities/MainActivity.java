@@ -638,10 +638,9 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
 
 
     public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main, menu);
         if (!is_in_Action) {
-            MenuInflater inflater = getMenuInflater();
-            inflater.inflate(R.menu.main, menu);
-
             display_mode = JetDB.getBoolean(MainActivity.this, "display_mode", false);
             if (display_mode) {
                 menu.findItem(R.id.display_mode).setTitle("ListView");
